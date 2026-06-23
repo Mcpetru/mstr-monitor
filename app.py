@@ -197,6 +197,6 @@ st.markdown(f"""
     <div class="metric-value">${premium_gap:,.2f}</div>
     <div class="metric-status" style="color: {gap_color}; font-weight: 500;">{gap_status}</div>
 </div>
-""", unsafe_html=True)
+""", unsafe_allow_html=True)
 
 st.caption("Designed for extreme readability under direct sunlight and high-stress environments.")
