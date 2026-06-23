@@ -163,7 +163,7 @@ st.markdown(f"""
     <div class="risk-title">Systemic Risk Level: {risk_level}</div>
     <div class="risk-score-value">{threat_score}</div>
 </div>
-""", unsafe_html=True)
+""", unsafe_allow_html=True)
 
 # Render Metric Card 1: Liquidation Buffer PnL
 btc_diff = ((btc_price - COST_BASIS) / COST_BASIS) * 100
