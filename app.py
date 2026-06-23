@@ -175,7 +175,7 @@ st.markdown(f"""
     <div class="metric-value">{'+' if btc_diff > 0 else ''}{btc_diff:.1f}%</div>
     <div class="metric-status" style="color: {buffer_color}; font-weight: 500;">{buffer_status}</div>
 </div>
-""", unsafe_html=True)
+""", unsafe_allow_html=True)
 
 # Render Metric Card 2: Equity Premium to NAV
 prem_color = "#b3261e" if premium_ratio > 2.0 else ("#f9ab00" if premium_ratio > 1.5 else "#146c2e")
@@ -186,7 +186,7 @@ st.markdown(f"""
     <div class="metric-value">{premium_ratio:.2f}x NAV ({premium_percent:.1f}% Premium)</div>
     <div class="metric-status" style="color: {prem_color}; font-weight: 500;">{prem_status}</div>
 </div>
-""", unsafe_html=True)
+""", unsafe_allow_html=True)
 
 # Render Metric Card 3: Coinbase Premium Gap
 gap_color = "#b3261e" if premium_gap < -50 else ("#f9ab00" if premium_gap < -10 else "#146c2e")
