@@ -77,7 +77,7 @@ st.markdown("""
         opacity: 0.8;
     }
 </style>
-""", unsafe_all_html=True)
+""", unsafe_allow_html=True)
 
 # Hardcoded reference points for Strategy Inc. corporate treasury
 BTC_HELD = 847363
