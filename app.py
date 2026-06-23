@@ -51,7 +51,7 @@ st.markdown(f"""
     <h3 style="margin:0; color:{color_hex};">{risk_status}</h3>
     <p style="margin:5px 0 0 0; font-size:14px; color:gray;">{text_explainer}</p>
 </div>
-""", unsafe_html=True)
+""", unsafe_allow_html=True)
 
 # 2x2 Clean layout blocks optimized for small screens
 col1, col2 = st.columns(2)
